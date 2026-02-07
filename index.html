@@ -62,6 +62,7 @@
   <button onclick="showTab('tasks',event)">Tasks</button>
   <button onclick="showTab('expenses',event)">Expenses</button>
   <button onclick="showTab('analysis',event)">Analytics</button>
+  <button onclick="showTab('compost',event)">Compost SOP</button>
 </nav>
 
 <!-- DASHBOARD -->
@@ -107,6 +108,24 @@
   <canvas id="expenseMonthChart"></canvas>
   <canvas id="expensePlotChart"></canvas>
   <canvas id="expenseCropChart"></canvas>
+</div>
+
+<div id="compost" class="tab">
+  <h3>🌱 Compost & Vermicompost SOP (Kannada)</h3>
+
+  <div style="
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:6px;
+    overflow:hidden;
+    height:80vh;
+  ">
+    <iframe
+            src="compost_kannada.html"
+            style="width:100%; height:100%; border:none;"
+            title="Compost SOP Kannada">
+    </iframe>
+  </div>
 </div>
 
 <script>
