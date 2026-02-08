@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop-wise Expense Audit & ROI Guardrails</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f7fa;
+            color: #1f2937;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #1b5e20;
+            margin-top: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+
+        th {
+            background: #e8f5e9;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            padding: 12px 14px;
+            margin: 14px 0;
+            font-weight: 600;
+        }
+
+        .warning {
+            background: #fff3e0;
+            border-left: 5px solid #f57c00;
+            padding: 12px 14px;
+            margin: 14px 0;
+        }
+
+        .good {
+            background: #e8f5e9;
+            border-left: 5px solid #2e7d32;
+            padding: 12px 14px;
+            margin: 14px 0;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #4b5563;
+        }
+
+        .cap {
+            font-weight: 700;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🌱 Crop-wise Expense Audit & ROI Guardrails</h1>
+
+<div class="card">
+    <h2>🎯 Purpose of this document</h2>
+    <p>
+        This page answers three critical questions:
+    </p>
+    <ul>
+        <li>Where is money actually being spent <strong>per plant</strong>?</li>
+        <li>What is the <strong>minimum and maximum justified spend</strong>?</li>
+        <li>Where can we improve to <strong>increase income without increasing risk</strong>?</li>
+    </ul>
+
+    <div class="highlight">
+        Rule of thumb: <br>
+        <strong>Never spend more than 40–50% of a crop’s income on that crop.</strong>
+    </div>
+</div>
+
+<!-- ARECANUT -->
+<div class="card">
+    <h2>🌴 Arecanut</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>₹ / plant / year</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Fertilizers & micros</td>
+            <td>₹120 – 150</td>
+            <td>N, K, Mg, Boron are essential</td>
+        </tr>
+        <tr>
+            <td>Labour (basin, application)</td>
+            <td>₹100 – 120</td>
+            <td>Mostly unavoidable</td>
+        </tr>
+        <tr>
+            <td>Plant protection</td>
+            <td>₹60 – 80</td>
+            <td>Mahali & insects</td>
+        </tr>
+        <tr>
+            <th>Total spend</th>
+            <th>₹280 – 350</th>
+            <th>Income ≈ ₹1,050 / plant</th>
+        </tr>
+    </table>
+
+    <div class="good">
+        ✔ Arecanut gives predictable returns. <br>
+        ✔ Extra spending usually gives proportional yield.
+    </div>
+
+    <div class="highlight">
+        <span class="cap">Spend cap:</span> ₹400 / plant
+        <br>Beyond this → no economic return.
+    </div>
+</div>
+
+<!-- COCONUT -->
+<div class="card">
+    <h2>🥥 Coconut (Copra-based)</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>₹ / palm / year</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Fertilizer (K, Mg, B heavy)</td>
+            <td>₹300 – 350</td>
+            <td>Controls nut number & size</td>
+        </tr>
+        <tr>
+            <td>Labour & harvest</td>
+            <td>₹180 – 220</td>
+            <td>Climbing, collection</td>
+        </tr>
+        <tr>
+            <td>Copra drying & handling</td>
+            <td>₹120 – 150</td>
+            <td>Quality protection</td>
+        </tr>
+        <tr>
+            <th>Total spend</th>
+            <th>₹650 – 700</th>
+            <th>Income ≈ ₹2,600 / palm</th>
+        </tr>
+    </table>
+
+    <div class="good">
+        ✔ Coconut is your <strong>income floor</strong>.
+        Cutting cost here hurts future years.
+    </div>
+
+    <div class="highlight">
+        <span class="cap">Spend cap:</span> ₹800 / palm
+    </div>
+</div>
+
+<!-- PEPPER -->
+<div class="card">
+    <h2>🌶️ Black Pepper (Panniyur-1)</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>₹ / vine / year</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Plant protection</td>
+            <td>₹200 – 250</td>
+            <td>Major cost driver</td>
+        </tr>
+        <tr>
+            <td>Fertilizers & micros</td>
+            <td>₹180 – 220</td>
+            <td>K & Mg critical</td>
+        </tr>
+        <tr>
+            <td>Labour (training, harvest)</td>
+            <td>₹180 – 200</td>
+            <td>Seasonal peaks</td>
+        </tr>
+        <tr>
+            <th>Total spend</th>
+            <th>₹600 – 670</th>
+            <th>Income ≈ ₹1,500 / vine</th>
+        </tr>
+    </table>
+
+    <div class="warning">
+        ⚠ Biggest overspend risk: <br>
+        Calendar-based fungicide sprays without symptoms.
+    </div>
+
+    <div class="highlight">
+        <span class="cap">Spend range:</span> ₹500 (min) – ₹750 (max)
+    </div>
+</div>
+
+<!-- CARDAMOM -->
+<div class="card">
+    <h2>🌿 Cardamom (Njallani Green Gold)</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>₹ / plant / year</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Fungicides & sprays</td>
+            <td>₹350 – 450</td>
+            <td>Main cost center</td>
+        </tr>
+        <tr>
+            <td>Labour (frequent harvest)</td>
+            <td>₹300 – 350</td>
+            <td>Hidden cost</td>
+        </tr>
+        <tr>
+            <td>Fertilizers & micros</td>
+            <td>₹250 – 300</td>
+            <td>Yield stabilizer</td>
+        </tr>
+        <tr>
+            <th>Total spend</th>
+            <th>₹900 – 1,050</th>
+            <th>Income ≈ ₹3,000+</th>
+        </tr>
+    </table>
+
+    <div class="warning">
+        ⚠ Cardamom costs escalate silently.
+        Discipline is critical.
+    </div>
+
+    <div class="highlight">
+        <span class="cap">Absolute cap:</span> ₹1,200 / plant
+        <br>Beyond this → risk > reward.
+    </div>
+</div>
+
+<!-- COFFEE -->
+<div class="card">
+    <h2>☕ Coffee (Chandragiri)</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>₹ / plant / year</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Labour (pruning, harvest)</td>
+            <td>₹80 – 100</td>
+            <td>Main expense</td>
+        </tr>
+        <tr>
+            <td>Fertilizer</td>
+            <td>₹70 – 90</td>
+            <td>Low response</td>
+        </tr>
+        <tr>
+            <th>Total spend</th>
+            <th>₹160 – 190</th>
+            <th>Income ≈ ₹200 / plant</th>
+        </tr>
+    </table>
+
+    <div class="highlight">
+        Coffee is a <strong>stabilizer crop</strong>, not a profit engine.
+        Overfeeding gives no ROI.
+    </div>
+</div>
+
+<!-- BANANA -->
+<div class="card">
+    <h2>🍌 Banana (single cycle)</h2>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>₹ / plant / cycle</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Fertilizers</td>
+            <td>₹120 – 150</td>
+            <td>Main yield driver</td>
+        </tr>
+        <tr>
+            <td>Labour</td>
+            <td>₹80 – 100</td>
+            <td>Planting + harvest</td>
+        </tr>
+        <tr>
+            <th>Total spend</th>
+            <th>₹220 – 250</th>
+            <th>Income ≈ ₹400 / plant</th>
+        </tr>
+    </table>
+
+    <div class="highlight">
+        Keep banana lean — short cycle, thin margins.
+    </div>
+</div>
+
+<!-- FINAL TAKEAWAY -->
+<div class="card">
+    <h2>🔑 Final Takeaways</h2>
+    <ul>
+        <li>You are <strong>not overspending overall</strong></li>
+        <li>Overspend risk exists mainly in <strong>pepper & cardamom sprays</strong></li>
+        <li>Coconut & arecanut deserve consistent nutrition</li>
+        <li>Target total farm cost: <strong>30–35% of gross income</strong></li>
+    </ul>
+
+    <div class="good">
+        Cost discipline here can unlock <strong>₹2–3 lakh/year</strong>
+        without increasing risk.
+    </div>
+</div>
+
+</body>
+</html>
