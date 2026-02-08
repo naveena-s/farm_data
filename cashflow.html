@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Farm Cashflow Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; background:#f5f7fa; margin:0; padding:20px; color:#1f2937; }
+        h1,h2,h3 { margin:0 0 12px; }
+        h1 { font-size:28px; }
+        h2 { font-size:22px; margin-top:28px; }
+        h3 { font-size:18px; margin-top:18px; }
+        .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:16px; }
+        .card { background:#fff; border-radius:12px; padding:16px 18px; box-shadow:0 6px 18px rgba(0,0,0,.06); }
+        .card.highlight { border-left:6px solid #16a34a; }
+        table { width:100%; border-collapse:collapse; margin-top:10px; }
+        th, td { padding:8px 10px; text-align:left; }
+        th { background:#f0fdf4; font-weight:600; }
+        tr:nth-child(even) td { background:#fafafa; }
+        .kpi { font-size:26px; font-weight:700; }
+        .muted { color:#6b7280; font-size:14px; }
+        .pos { color:#16a34a; font-weight:600; }
+        .neg { color:#dc2626; font-weight:600; }
+        .note { background:#ecfeff; border-left:5px solid #06b6d4; padding:12px; border-radius:8px; margin-top:12px; }
+        footer { margin-top:32px; font-size:13px; color:#6b7280; }
+    </style>
+</head>
+<body>
+
+<h1>🌾 Farm Cashflow Dashboard</h1>
+<p class="muted">Annual outlook with 5‑year projection (conservative assumptions)</p>
+
+<section class="grid">
+    <div class="card">
+        <h3>🌴 Arecanut</h3>
+        <p class="kpi">1,100</p>
+        <p class="muted">~2 years, pre‑bearing</p>
+    </div>
+    <div class="card">
+        <h3>🥥 Coconut</h3>
+        <p class="kpi">150</p>
+        <p class="muted">50 bearing · 100 flowering</p>
+    </div>
+    <div class="card">
+        <h3>🍌 Banana</h3>
+        <p class="kpi">1,000</p>
+        <p class="muted">500 flowering · 500 six‑month</p>
+    </div>
+</section>
+
+<h2>💰 Cashflow – Current Year</h2>
+<div class="grid">
+    <div class="card">
+        <h3>Projected Cash Outflow</h3>
+        <table>
+            <tr><th>Category</th><th>₹</th></tr>
+            <tr><td>Arecanut inputs</td><td>1,16,600</td></tr>
+            <tr><td>Coconut inputs</td><td>32,400</td></tr>
+            <tr><td>Banana inputs</td><td>40,000</td></tr>
+            <tr><td>Labour & Misc (annual)</td><td>1,00,000</td></tr>
+            <tr><td>Compost & Vermicompost</td><td>1,60,000</td></tr>
+            <tr><th>Total Outflow</th><th>4,49,000</th></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Projected Income</h3>
+        <table>
+            <tr><th>Crop</th><th>₹</th></tr>
+            <tr><td>Coconut</td><td>1,00,000</td></tr>
+            <tr><td>Banana (1000 × 10 kg × ₹40)</td><td>4,00,000</td></tr>
+            <tr><td>Arecanut</td><td>0</td></tr>
+            <tr><th>Total Income</th><th>5,00,000</th></tr>
+        </table>
+    </div>
+
+    <div class="card highlight">
+        <h3><h3>Net Position</h3>
+            <p class="kpi pos">+ ₹51,000</p>
+            <p class="muted">Cash positive due to strong banana cycle</p>
+    </div>
+</div>
+
+<h2>📊 Cost Efficiency</h2>
+<div class="card">
+    <table>
+        <tr><th>Crop</th><th>Cost / Plant (₹)</th><th>Status</th></tr>
+        <tr><td>Arecanut</td><td>106</td><td>Investment phase</td></tr>
+        <tr><td>Coconut</td><td>216</td><td>Partial income</td></tr>
+        <tr><td>Banana</td><td>40</td><td>Cash crop</td></tr>
+    </table>
+</div>
+
+<h2>📈 5-Year Income Projection (Crop-wise Breakdown)</h2>
+
+<div class="card">
+    <h3>🌴 Arecanut (1100 palms)</h3>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Yield / Palm (kg)</th>
+            <th>Total Yield (kg)</th>
+            <th>Income @ ₹50/kg</th>
+        </tr>
+        <tr><td>Year 1</td><td>0</td><td>0</td><td>₹0</td></tr>
+        <tr><td>Year 2</td><td>0</td><td>0</td><td>₹0</td></tr>
+        <tr><td>Year 3</td><td>5</td><td>5,500</td><td>₹2,75,000</td></tr>
+        <tr><td>Year 4</td><td>10</td><td>11,000</td><td>₹5,50,000</td></tr>
+        <tr><td>Year 5</td><td>20</td><td>22,000</td><td>₹11,00,000</td></tr>
+    </table>
+</div>
+
+<div class="card">
+    <h3>🥥 Coconut (150 palms)</h3>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Bearing Palms</th>
+            <th>Avg Nuts / Palm</th>
+            <th>Income @ ₹25 / nut</th>
+        </tr>
+        <tr><td>Year 1</td><td>50</td><td>80</td><td>₹1,00,000</td></tr>
+        <tr><td>Year 2</td><td>100</td><td>90</td><td>₹2,25,000</td></tr>
+        <tr><td>Year 3</td><td>150</td><td>100</td><td>₹3,75,000</td></tr>
+        <tr><td>Year 4</td><td>150</td><td>110</td><td>₹4,12,500</td></tr>
+        <tr><td>Year 5</td><td>150</td><td>120</td><td>₹4,50,000</td></tr>
+    </table>
+</div>
+
+<div class="card">
+    <h3>🍌 Banana (1000 plants)</h3>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Cycles</th>
+            <th>Total Yield (kg)</th>
+            <th>Income @ ₹40/kg</th>
+        </tr>
+        <tr><td>Year 1</td><td>1</td><td>10,000</td><td>₹4,00,000</td></tr>
+        <tr><td>Year 2</td><td>2</td><td>10,000</td><td>₹4,00,000</td></tr>
+        <tr><td>Year 3</td><td>2</td><td>10,000</td><td>₹4,00,000</td></tr>
+        <tr><td>Year 4</td><td>2</td><td>10,000</td><td>₹4,00,000</td></tr>
+        <tr><td>Year 5</td><td>2</td><td>10,000</td><td>₹4,00,000</td></tr>
+    </table>
+</div>
+
+<div class="card highlight">
+    <h3>📊 Overall Farm Income Outlook (Source-wise)</h3>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Arecanut</th>
+            <th>Coconut</th>
+            <th>Banana</th>
+            <th>Total Income</th>
+        </tr>
+        <tr>
+            <td>2026</td>
+            <td>₹0</td>
+            <td>₹1,00,000</td>
+            <td>₹4,00,000</td>
+            <td><strong>₹5,00,000</strong></td>
+        </tr>
+        <tr>
+            <td>2027</td>
+            <td>₹0</td>
+            <td>₹2,25,000</td>
+            <td>₹4,00,000</td>
+            <td><strong>₹6,25,000</strong></td>
+        </tr>
+        <tr>
+            <td>2028</td>
+            <td>₹2,75,000</td>
+            <td>₹3,75,000</td>
+            <td>₹4,00,000</td>
+            <td><strong>₹10,50,000</strong></td>
+        </tr>
+        <tr>
+            <td>2029</td>
+            <td>₹5,50,00</td>
+            <td>₹4,12,500</td>
+            <td>₹4,00,000</td>
+            <td><strong>₹13,62,000</strong></td>
+        </tr>
+        <tr>
+            <td>2030</td>
+            <td>₹11,00,000</td>
+            <td>₹4,50,000</td>
+            <td>₹4,00,000</td>
+            <td><strong>₹19,50,000</strong></td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="note">
+    Banana provides liquidity, coconut builds annuity income, and arecanut becomes the long‑term capital engine from Year‑3 onward.
+</div>
+
+<footer>
+    Designed for annual review · Extendable with labour, monthly tracking & charts
+</footer>
+
+</body>
+</html>
